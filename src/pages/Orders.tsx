@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 import styled from "styled-components";
 
 export const Orders: FC = () => {
@@ -11,13 +11,13 @@ export const Orders: FC = () => {
 };
 
 const Container = styled.div`
-    padding: 25px;
-    position: relative;
-    & button {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        height: 40px;
-        font-size: 18px;
-    }
+  padding: 25px;
+  position: relative;
+  & button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    height: 40px;
+    font-size: 18px;
+  }
 `;

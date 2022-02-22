@@ -1,8 +1,13 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Sidebar: FC = () => {
+    const navigate = useNavigate();
+    const handleLogout = () => {
+        localStorage.removeItem("userName");
+        navigate("/login");
+    };
     return (
         <Container className={"sidebar"}>
             <ul>
@@ -16,9 +21,7 @@ export const Sidebar: FC = () => {
                     <Link to={"orders"}>Orders</Link>
                 </li>
             </ul>
-            <div>
-                Logout
-            </div>
+            <div onClick={handleLogout}>Logout</div>
         </Container>
     );
 };

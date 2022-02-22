@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 import styled from "styled-components";
 
 export const NotFound: FC = () => {
@@ -10,10 +10,10 @@ export const NotFound: FC = () => {
 };
 
 const StyledCont = styled.div`
-    display: flex;
+  display: flex;
   justify-content: center;
   padding: 50px;
-    height: 100vh;
+  height: 100vh;
   & div {
     font-size: 150px;
   }
